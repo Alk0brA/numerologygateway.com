@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service - Numerology Gateway</title>
+  <meta name="description" content="Terms of Service for Numerology Gateway mobile application.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg-primary: #0B1120;
+      --bg-secondary: #111827;
+      --bg-card: #1a2235;
+      --text-primary: #F1F5F9;
+      --text-secondary: #94A3B8;
+      --accent-purple: #7C3AED;
+      --accent-indigo: #4F46E5;
+      --accent-gold: #D4A843;
+      --gradient-button: linear-gradient(135deg, #7C3AED 0%, #4F46E5 100%);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 16px 0;
+      background: rgba(11, 17, 32, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(124, 58, 237, 0.15);
+    }
+    .navbar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-primary);
+    }
+    .navbar .logo img {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+    }
+    .navbar .logo span {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    .navbar .back-link {
+      color: var(--accent-purple);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+    .navbar .back-link:hover { opacity: 0.8; }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .content {
+      padding-top: 100px;
+      padding-bottom: 60px;
+    }
+
+    .page-header {
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(124, 58, 237, 0.2);
+    }
+    .page-header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #F1F5F9, #D4A843);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .page-header .updated {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .section {
+      margin-bottom: 32px;
+    }
+    .section h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+    }
+    .section h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--accent-gold);
+      margin-bottom: 10px;
+      margin-top: 16px;
+    }
+    .section p {
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+    .section p.uppercase {
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+    .section ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 12px;
+    }
+    .section ul li {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      padding: 6px 0 6px 20px;
+      position: relative;
+      line-height: 1.7;
+    }
+    .section ul li::before {
+      content: "•";
+      color: var(--accent-purple);
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+
+    .contact-box {
+      background: var(--bg-card);
+      border: 1px solid rgba(124, 58, 237, 0.2);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 12px;
+    }
+    .contact-box .name {
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .contact-box a {
+      color: var(--accent-purple);
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .contact-box a:hover { opacity: 0.8; }
+
+    .footer {
+      text-align: center;
+      padding: 32px 0;
+      border-top: 1px solid rgba(148, 163, 184, 0.1);
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+    .footer a {
+      color: var(--accent-purple);
+      text-decoration: none;
+      margin: 0 12px;
+    }
+    .footer a:hover { opacity: 0.8; }
+
+    @media (max-width: 600px) {
+      .page-header h1 { font-size: 1.8rem; }
+      .section h2 { font-size: 1.15rem; }
+      .container { padding: 0 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="logo">
+        <img src="app-icon.png" alt="Numerology Gateway">
+        <span>Numerology Gateway</span>
+      </a>
+      <a href="/" class="back-link">← Back to Home</a>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="content">
+    <div class="container">
+
+      <div class="page-header">
+        <h1>Terms of Service</h1>
+        <p class="updated">Last Updated: February 5, 2026</p>
+      </div>
+
+      <div class="section">
+        <h2>1. Agreement to Terms</h2>
+        <p>By downloading, installing, or using Numerology Gateway ("the App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.</p>
+        <p>These Terms constitute a legally binding agreement between you and Numerology Gateway ("we," "us," or "our") governing your use of the App.</p>
+      </div>
+
+      <div class="section">
+        <h2>2. Description of Service</h2>
+        <p>Numerology Gateway is a mobile application that provides numerology analysis and personal development insights based on your name and date of birth. Our services include:</p>
+        <ul>
+          <li>Numerology profile calculations and interpretations</li>
+          <li>AI-powered personal development recommendations</li>
+          <li>Multi-year development planning tools</li>
+          <li>Progress tracking and milestone management</li>
+          <li>Personalized dashboard and insights</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>3. User Accounts</h2>
+        <h3>3.1 Registration</h3>
+        <p>To access certain features, you may need to create an account. You agree to provide accurate, current, and complete information during registration and to update such information to keep it accurate.</p>
+        <h3>3.2 Account Security</h3>
+        <p>You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account.</p>
+        <h3>3.3 Account Termination</h3>
+        <p>You may delete your account at any time through the App settings or by contacting us. We reserve the right to suspend or terminate accounts that violate these Terms.</p>
+      </div>
+
+      <div class="section">
+        <h2>4. Acceptable Use</h2>
+        <p>You agree not to:</p>
+        <ul>
+          <li>Use the App for any unlawful purpose</li>
+          <li>Attempt to gain unauthorized access to any part of the App</li>
+          <li>Interfere with or disrupt the App's functionality</li>
+          <li>Reverse engineer, decompile, or disassemble the App</li>
+          <li>Use automated systems to access the App without permission</li>
+          <li>Impersonate any person or entity</li>
+          <li>Share your account credentials with others</li>
+          <li>Use the App to harass, abuse, or harm others</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>5. AI-Generated Content</h2>
+        <h3>5.1 Nature of AI Content</h3>
+        <p>The App uses artificial intelligence to generate numerology interpretations, recommendations, and development plans. This content is generated algorithmically based on numerological principles and your input data.</p>
+        <h3>5.2 Disclaimer</h3>
+        <p>AI-generated content is provided for entertainment and personal development purposes only. It should not be considered professional advice (medical, financial, legal, or otherwise). You acknowledge that AI interpretations are subjective and may not be accurate or applicable to your specific situation.</p>
+        <h3>5.3 User Responsibility</h3>
+        <p>You are solely responsible for any decisions or actions you take based on AI-generated content. We disclaim all liability for outcomes resulting from your reliance on such content.</p>
+      </div>
+
+      <div class="section">
+        <h2>6. Intellectual Property</h2>
+        <h3>6.1 Our Rights</h3>
+        <p>The App, including its design, features, content, and underlying technology, is owned by Numerology Gateway and protected by intellectual property laws. You may not copy, modify, distribute, or create derivative works without our written permission.</p>
+        <h3>6.2 Your Content</h3>
+        <p>You retain ownership of any personal data you provide. By using the App, you grant us a limited license to process your data as described in our <a href="/privacy" style="color: var(--accent-purple);">Privacy Policy</a> to provide our services.</p>
+      </div>
+
+      <div class="section">
+        <h2>7. Subscriptions and Payments</h2>
+        <h3>7.1 Free and Premium Features</h3>
+        <p>The App offers both free and premium features. Premium features require a paid subscription. Subscription terms, pricing, and features are displayed in the App.</p>
+        <h3>7.2 Billing</h3>
+        <p>Subscriptions are billed through your app store account (Apple App Store or Google Play). You agree to pay all applicable fees and authorize the app store to charge your payment method.</p>
+        <h3>7.3 Cancellation</h3>
+        <p>You may cancel your subscription at any time through your app store account settings. Cancellation takes effect at the end of the current billing period. No refunds are provided for partial periods.</p>
+        <h3>7.4 Refunds</h3>
+        <p>Refund requests are handled by the respective app store according to their policies. We do not process refunds directly.</p>
+      </div>
+
+      <div class="section">
+        <h2>8. Disclaimers</h2>
+        <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
+        <ul>
+          <li>Warranties of merchantability or fitness for a particular purpose</li>
+          <li>Warranties that the App will be uninterrupted or error-free</li>
+          <li>Warranties regarding the accuracy of numerology interpretations</li>
+          <li>Warranties that the App will meet your specific requirements</li>
+        </ul>
+        <p>Numerology is not a science and should be treated as entertainment. We make no claims about the predictive accuracy or validity of numerological analysis.</p>
+      </div>
+
+      <div class="section">
+        <h2>9. Limitation of Liability</h2>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, NUMEROLOGY GATEWAY SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO:</p>
+        <ul>
+          <li>Loss of profits, data, or goodwill</li>
+          <li>Personal injury or property damage</li>
+          <li>Unauthorized access to your data</li>
+          <li>Any decisions made based on App content</li>
+        </ul>
+        <p>Our total liability shall not exceed the amount you paid for the App in the 12 months preceding the claim.</p>
+      </div>
+
+      <div class="section">
+        <h2>10. Indemnification</h2>
+        <p>You agree to indemnify, defend, and hold harmless Numerology Gateway and its officers, directors, employees, and agents from any claims, damages, losses, or expenses (including legal fees) arising from:</p>
+        <ul>
+          <li>Your use of the App</li>
+          <li>Your violation of these Terms</li>
+          <li>Your violation of any third-party rights</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>11. Governing Law</h2>
+        <p>These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law principles. Any disputes arising from these Terms shall be resolved through binding arbitration or in courts of competent jurisdiction.</p>
+      </div>
+
+      <div class="section">
+        <h2>12. Changes to Terms</h2>
+        <p>We reserve the right to modify these Terms at any time. We will notify you of material changes by posting the updated Terms in the App and updating the "Last Updated" date. Your continued use of the App after changes constitutes acceptance of the modified Terms.</p>
+      </div>
+
+      <div class="section">
+        <h2>13. Severability</h2>
+        <p>If any provision of these Terms is found to be unenforceable, the remaining provisions shall continue in full force and effect.</p>
+      </div>
+
+      <div class="section">
+        <h2>14. Contact Information</h2>
+        <p>For questions about these Terms, please contact us:</p>
+        <div class="contact-box">
+          <p class="name">Numerology Gateway</p>
+          <a href="mailto:legal@numerologygateway.com">legal@numerologygateway.com</a>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>&copy; 2026 Numerology Gateway. All rights reserved.</p>
+        <p style="margin-top: 12px;">
+          <a href="/">Home</a>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
